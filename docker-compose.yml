@@ -1,0 +1,8 @@
+services:
+  backend:
+    image: gym-count
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "42069:8080"
+    restart: unless-stopped
